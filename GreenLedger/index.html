@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GreenLedger – Transparent Carbon Action Tracker</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<h1>GreenLedger – Transparent Carbon Action Tracker</h1>
+<p>Track your eco-actions and earn EcoCredits!</p>
+<button onclick="addCredit()">Add EcoCredit</button>
+<p id="credits">EcoCredits: 0</p>
+<script>
+let credits = 0;
+function addCredit() {
+    credits++;
+    document.getElementById("credits").innerText = "EcoCredits: " + credits;
+}
+</script>
+</body>
+</html>
